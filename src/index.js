@@ -1,1 +1,3 @@
-console.log('Hey, this is running');
+import "./css/style.css";
+import { check } from './js/home.js';
+

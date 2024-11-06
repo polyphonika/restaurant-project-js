@@ -1,0 +1,62 @@
+/* inheritable globals go here: fonts, colours - note that margin, padding and box sizing can't be inherited hence going above */
+:root {    
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 /*can be too heavy handed to go for full on reset */
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+  
+ /* Remove default margin in favour of better control in authored CSS  - basically no margin bottom*/
+h1, h2, h3, h4, p,
+  figure, blockquote, dl, dd {
+    margin-block-end: 1rem;
+  }
+
+  /* Set core body defaults */
+body {
+    margin: 0; /* not inheritable, just gets rid of the small default 8px margin surrounding the page */
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+  
+  /* Set shorter line heights on headings and interactive elements */
+  h1, h2, h3, h4,
+  button, input, label {
+    line-height: 1.1;
+  }
+
+  /* ------ RESETS DONE ------- */
+
+  .container {
+    width: 50rem;
+    /* display: grid; */
+    /* justify-self: center; */
+    margin: 0 auto;
+    /* border: 1px solid black;  */
+    /* padding: 2rem; */
+  }
+  
+  #content {
+    /* width: 50rem; */
+    /* display: grid; */
+    /* justify-self: center; */
+    /* margin: 0 auto; */
+    border: 1px solid black; 
+    padding: 2rem;
+  }
+
+  img {
+    width: 20rem;
+    display: grid;
+    justify-self: center;
+  }

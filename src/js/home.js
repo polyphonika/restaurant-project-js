@@ -1,0 +1,1 @@
+export const check = console.log('from home');
