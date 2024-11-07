@@ -1,3 +1,9 @@
 import "./css/style.css";
-import { check } from './js/home.js';
+
+import createHomePage from './js/home.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    const homePage = createHomePage();
+    homePage.render();
+    });
 
